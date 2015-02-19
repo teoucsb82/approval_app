@@ -46,6 +46,10 @@ div.container {
     .form-header {
       border-color: black;
       background-color: black;
+      span {
+        background-color: $gray-light;
+        text-transform: uppercase;
+      }
     }
     .form-body {
       padding: 5%;
