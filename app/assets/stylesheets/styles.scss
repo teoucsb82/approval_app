@@ -15,6 +15,18 @@ body {
 
 .modal {
   padding-top: 10%;
+  .modal-content {
+    box-shadow: 5px 5px 50px $brand-secondary;
+  }
+  .modal-header {
+    color: white;
+    border-color: black;
+    background-color: black;
+    span {
+      background-color: $gray-light;
+      text-transform: uppercase;
+    }
+  }
 }
 
 nav.navbar {
@@ -70,7 +82,4 @@ div.container {
   }
 }
 
-/* custom css */
-.w100 {
-  width: 100%;
-}
+.w100 { width: 100%; }
