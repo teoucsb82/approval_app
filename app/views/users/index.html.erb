@@ -1,0 +1,39 @@
+<%= render 'loading_modal' %>
+
+<section>
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>Some header text goes here</h1>
+      <p>And some paragraph text goes here</p>
+      <ul>
+        <li>cool fact 1</li>
+        <li>cool fact 2</li>
+        <li>cool fact 3</li>
+        <li>cool fact 4</li>
+        <li>cool fact 5</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-4">
+      <%= form_for(@user) do |f| %>
+      <h2>Hey this is a form</h2>
+      <p>And yeah this is some text</p>
+        <div class="field">
+          <%= f.label :name %><br>
+          <%= f.text_field :name, placeholder: "full name" %>
+        </div>
+        <div class="field">
+          <%= f.label :dob %><br>
+          <%= f.text_field :dob, placeholder: "mm/dd/yy" %>
+        </div>
+        <div class="field">
+          <%= f.label :ssn %><br>
+          <%= f.text_field :ssn, placeholder: "xxx-xx-xxxx" %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
