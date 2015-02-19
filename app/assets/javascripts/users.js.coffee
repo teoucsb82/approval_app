@@ -22,7 +22,7 @@ $ ->
   $("form#new_user").submit (e) ->
     e.preventDefault()
     flag = true
-    $("#user_name, #user_dob, #user_ssn").removeClass("has-error")
+    $("#user_name, #user_dob, #user_ssn").parents(".form-group").removeClass("has-error")
     $(".form-errors").hide()
     $("#user_name, #user_dob, #user_ssn").each ->
       if @value.length == 0
