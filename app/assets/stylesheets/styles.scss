@@ -25,15 +25,17 @@ nav.navbar {
 }
 
 section {
-  background-color: $brand-primary;
+  &.color { 
+    background-color: $brand-primary;
+  }
   &.padded {
     padding: 5% 0 10%;
   }
 }
 
 div.container {
-  color: white;
   div.application-text {
+    color: white;
     span {
       color: $brand-secondary;
     }
@@ -43,6 +45,7 @@ div.container {
     padding: 0;
     border: 2px solid black;
     box-shadow: 5px 5px 50px $brand-secondary;
+    color: white;
     .form-header {
       border-color: black;
       background-color: black;
